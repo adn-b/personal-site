@@ -1,0 +1,75 @@
+@font-face {
+    font-family: pixel;
+    src: url(assets/fonts/pixel.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/fonts/roboto.ttf);
+}
+
+body {
+    font-family: roboto;
+    color: white;
+    background-color: #1A191D;
+    margin: 0;
+    padding: 0;
+}
+
+#landing {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+#portfolio {
+    padding: 50px 20px;
+}
+
+#contactinfo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#email-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+
+#email {
+    margin: 0;
+    white-space: nowrap;
+}
+
+#copybutton {
+    background-color: transparent;
+    border: 0;
+}
+
+#copybutton:hover {
+    cursor: pointer;
+}
+
+#copyicon {
+    color: white;
+}
+
+#copy-alert {
+    display: none;
+    position: absolute;
+    left: 240px;
+    font-size: 0.8em;
+}
+
+.contact-wrapper p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
