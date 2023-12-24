@@ -29,13 +29,13 @@ body {
 
 .typing-cursor {
     display: inline-block;
-    vertical-align: bottom; /* Align with text */
-    width: 2px; /* Adjust width as needed */
-    height: 1em; /* Match line height of the text */
-    background-color: currentColor; /* Use the current text color */
-    margin-left: 3px; /* Small space from the last letter */
+    vertical-align: bottom;
+    width: 2px;
+    height: 1em;
+    background-color: currentColor;
+    margin-left: 3px;
     margin-bottom: 5px;
-    animation: blink 1s steps(1) infinite; /* Blinking effect */
+    animation: blink 1s steps(1) infinite;
 }
 
 
