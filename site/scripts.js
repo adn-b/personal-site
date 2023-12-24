@@ -11,3 +11,19 @@ function copyEmail() {
         console.error('Could not copy text: ', err);
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var text = "Aidan Butler";
+    var typingText = document.getElementById('typing-text');
+    var i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            typingText.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100); // Adjust speed of typing here
+        }
+    }
+
+    typeWriter();
+});

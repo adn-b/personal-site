@@ -21,6 +21,24 @@ body {
     padding: 100px 50px;
 }
 
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.typing-cursor {
+    display: inline-block;
+    vertical-align: bottom; /* Align with text */
+    width: 2px; /* Adjust width as needed */
+    height: 1em; /* Match line height of the text */
+    background-color: currentColor; /* Use the current text color */
+    margin-left: 3px; /* Small space from the last letter */
+    margin-bottom: 5px;
+    animation: blink 1s steps(1) infinite; /* Blinking effect */
+}
+
+
 #portfolio {
     padding: 50px 20px;
 }
@@ -41,7 +59,6 @@ body {
 
 #email {
     margin: 0;
-    white-space: nowrap;
 }
 
 #copybutton {
